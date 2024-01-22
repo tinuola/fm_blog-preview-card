@@ -10,19 +10,11 @@ Solution to the _[Blog Preview Card](https://www.frontendmentor.io/challenges/bl
 
 ### Solution
 
-Live Site: []()
-
-### Retrospective
-
--
-
-### Enhancement(s)
-
--
+Live Site: [tinuola.github.io/fm_blog-preview-card/](https://tinuola.github.io/fm_blog-preview-card/)
 
 ### Tools & Resources
 
-- HTML, CSS, JavaScript
+- HTML & CSS
 - CSS Resets
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_

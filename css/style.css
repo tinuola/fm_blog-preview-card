@@ -1,5 +1,26 @@
+@font-face {
+  font-family: 'Fig Tree';
+  src: url('../assets/fonts/Figtree-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fig Tree';
+  src: url('../assets/fonts/Figtree-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Fig Tree';
+  src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
 :root {
   --primary-yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --primary-font: 'Fig Tree';
 }
 
 /* Hidden class for accessibility */
@@ -17,7 +38,6 @@
 
 body {
   font-family: var(--primary-font);
-  font-weight: 400;
   background-color: var(--primary-yellow);
 }
 
@@ -34,7 +54,7 @@ body {
   width: 384px;
   border: 2px solid #000;
   border-radius: 1.25rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .card-section {
@@ -42,13 +62,14 @@ body {
 }
 
 .card__img-block {
-  background-image: url('/assets/images/illustration-article.svg');
+  background-image: url('../assets/images/illustration-article.svg');
   border-radius: 0.625rem;
   min-height: 200px;
 }
 
 .card-label {
   background-color: var(--primary-yellow);
+  font-weight: 800;
   display: inline-block;
   border-radius: 0.25rem;
   padding: 4px 12px;
@@ -66,14 +87,24 @@ body {
   margin: 0.75rem 0;
 }
 
-.card-footer {
+.card-description {
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.card__footer {
   display: flex;
+  align-items: center;
 }
 
 .author-img {
   width: 32px;
   height: 32px;
   margin-right: 0.75rem;
+}
+
+.card-byline {
+  font-weight: 800;
 }
 
 .fm-byline-row {
@@ -89,5 +120,6 @@ body {
 
 .fm-byline,
 .fm-byline a {
-  color: hsl(228, 45%, 44%);
+  color: var(--black);
+  font-weight: 600;
 }
