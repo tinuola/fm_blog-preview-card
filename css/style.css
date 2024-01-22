@@ -51,10 +51,18 @@ body {
 
 .card-container {
   padding: 1.5rem;
-  width: 384px;
+  margin-top: 1.5rem;
+  width: 327px;
   border: 2px solid #000;
   border-radius: 1.25rem;
+  box-shadow: 8px 8px var(--black);
   background-color: var(--white);
+}
+
+@media (min-width: 576px) {
+  .card-container {
+    width: 384px;
+  }
 }
 
 .card-section {
@@ -77,19 +85,47 @@ body {
 }
 
 .card-label,
-.card-meta,
-.card-byline {
-  font-size: 0.875rem;
+.card-meta {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-label,
+  .card-meta,
+  .card-byline {
+    font-size: 0.875rem;
+  }
 }
 
 .card-headline {
-  font-size: 1.5rem;
+  display: inline-block;
+  font-size: 1.25rem;
   margin: 0.75rem 0;
+  transition: all 0.5s;
+}
+
+@media (min-width: 576px) {
+  .card-headline {
+    font-size: 1.5rem;
+  }
+}
+
+.card-headline:hover {
+  color: var(--primary-yellow);
+  background-color: var(--black);
+  cursor: pointer;
 }
 
 .card-description {
   color: var(--gray);
+  font-size: 0.87rem;
   font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .card-description {
+    font-size: 1rem;
+  }
 }
 
 .card__footer {
@@ -105,10 +141,11 @@ body {
 
 .card-byline {
   font-weight: 800;
+  font-size: 0.875rem;
 }
 
 .fm-byline-row {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .fm-byline {
